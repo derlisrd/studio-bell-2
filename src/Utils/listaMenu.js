@@ -10,6 +10,29 @@ export const listaMenu = [
         private:false
       },
       {
+        id: 58,
+        title: "agendas",
+        icon: "event",
+        color: "#a0aec0",
+        submenu:[
+          {
+            id:51,
+            url: `${BASEURL}/agenda`,
+            title:'agenda',
+            icon: "edit_calendar",
+            color: "#a0aec0",
+          },
+          {
+            id:49,
+            url: `${BASEURL}/turnos`,
+            title:'turnos',
+            icon: "perm_contact_calendar",
+            color: "#a0aec0",
+          },
+        ],
+        
+      },
+      {
         id: 44,
         title: "informes",
         icon: "trending_up",

@@ -1,6 +1,7 @@
 export const translate = {
     es:{
         monedas_de_caja:"Monedas de caja",
+        agenda:"Agenda",
         fecha_nacimiento:"Fecha de nacimiento",
         ver_mas:"Ver más",
         lucro:"Lucro",
@@ -54,7 +55,6 @@ export const translate = {
         turnos:"Turnos",
         guardar:"Guardar",
         no_se_puede_borrar:"No se puede borrar",
-        agenda:"Agenda",
         notas:"Notas",
         entregas:"Entregas",
         nuevo_talonario:"Nuevo talonario",

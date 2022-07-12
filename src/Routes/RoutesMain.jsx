@@ -40,7 +40,8 @@ import RegistroMovimientos from "../Pages/Caja/RegistroMovimientos";
 import Entregas from "../Pages/Ventas/Entregas";
 import Transferencias from "../Pages/Productos/Transferencias";
 import Cuentas from "../Pages/Cuentas";
-
+import Agenda from "../Pages/Agenda";
+import Turnos from "../Pages/Turnos";
 
 const RoutesMain = () => {
   const navigate = useNavigate();
@@ -80,6 +81,8 @@ const RoutesMain = () => {
   return (
     <Routes>
       <Route path={R+"cuentas"} element={<PrivateRoute id={47}><Cuentas /></PrivateRoute>} />
+      <Route path={R+"turnos"} element={<PrivateRoute id={51}><Turnos /></PrivateRoute>} />
+      <Route path={R+"agenda"} element={<PrivateRoute id={51}><Agenda /></PrivateRoute>} />
       <Route path={R+"transferencias"} element={<PrivateRoute id={60}><Transferencias /></PrivateRoute>} />
       <Route path={R+"entregas"} element={<PrivateRoute id={16}><Entregas /></PrivateRoute>} />
       <Route path={R+"registromovimientos"} element={<PrivateRoute id={26}><RegistroMovimientos /></PrivateRoute>} />

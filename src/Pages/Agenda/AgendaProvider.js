@@ -6,15 +6,16 @@ import React, {
   useCallback,
 } from "react";
 import swal from "sweetalert";
-import { APICALLER } from "../../Api/ApiCaller";
-import { useLogin } from "../../Contextos/LoginProvider";
+import { APICALLER } from "../../Services/api";
+import { useLogin } from "../../Contexts/LoginProvider";
 
 const Contexto = createContext();
 
 const AgendaProvider = ({ children }) => {
   const [eventos, setEventos] = useState([]);
   const [lista,setLista] = useState([]);
-  const {token_user} = useLogin();
+  const {userData} = useLogin();
+  const {token_user} = userData;
   const initialForm = {
     descripcion_agenda: "",
     fecha_inicio_agenda: "",
